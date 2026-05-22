@@ -1,0 +1,21 @@
+{
+  "extends": "@lektus/tsconfig/react-app.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lektus/auth": ["../auth/src"],
+      "@lektus/auth/*": ["../auth/src/*"],
+      "@lektus/theme": ["../theme/src"],
+      "@lektus/theme/*": ["../theme/src/*"],
+      "@lektus/types": ["../types/src"],
+      "@lektus/types/*": ["../types/src/*"],
+      "@lektus/utils": ["../utils/src"],
+      "@lektus/utils/*": ["../utils/src/*"],
+      "@lektus/hooks": ["../hooks/src"],
+      "@lektus/hooks/*": ["../hooks/src/*"],
+      "@lektus/constants": ["../constants/src"],
+      "@lektus/constants/*": ["../constants/src/*"]
+    }
+  },
+  "include": ["src", "../theme/src/mui.d.ts"]
+}

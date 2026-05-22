@@ -1,0 +1,10 @@
+{
+  "extends": "@lektus/tsconfig/react-app.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lektus/types": ["../types/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

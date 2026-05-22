@@ -1,0 +1,40 @@
+# Dependencies
+node_modules
+package-lock.json
+.pnp
+.pnp.js
+
+# Build outputs
+dist
+build
+.turbo
+
+# Environment
+apps/*/.env
+apps/*/.env.local
+apps/*/.env.development.local
+apps/*/.env.test.local
+apps/*/.env.production.local
+.env.local
+.env.*.local
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+.env
+md

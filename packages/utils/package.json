@@ -1,0 +1,21 @@
+{
+  "name": "@lektus/utils",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "date-fns": "catalog:",
+    "lodash": "^4.17.21",
+    "numeral": "^2.0.6"
+  },
+  "devDependencies": {
+    "@lektus/tsconfig": "workspace:*",
+    "@types/lodash": "^4.17.20",
+    "@types/numeral": "^2.0.5",
+    "typescript": "^5.8.3"
+  }
+}

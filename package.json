@@ -1,0 +1,43 @@
+{
+  "name": "gamusa-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:gamusa": "turbo dev --filter=@gamusa/web",
+    "build:gamusa": "turbo build --filter=@gamusa/web",
+    "dev:all": "turbo dev",
+    "build:all": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.8.1",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.2",
+  "pnpm": {
+    "overrides": {
+      "react-router-dom": "7.13.1",
+      "react-router": "7.13.1"
+    }
+  },
+  "dependencies": {
+    "@mui/x-date-pickers": "^9.0.2",
+    "dayjs": "^1.11.20"
+  }
+}

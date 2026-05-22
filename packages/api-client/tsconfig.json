@@ -1,0 +1,15 @@
+{
+  "extends": "@lektus/tsconfig/base.json",
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM"],
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lektus/auth": ["../auth/src/index.ts"],
+      "@lektus/auth/*": ["../auth/src/*"],
+      "@lektus/types": ["../types/src"],
+      "@lektus/types/*": ["../types/src/*"]
+    }
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/satya/Desktop/techechelons/Lektus/lektus-api/src/modules/intranet/**)",
+      "Bash(node_modules/.bin/tsc --project apps/intranet/tsconfig.json --noEmit)",
+      "Read(//usr/local/bin/**)",
+      "Read(//home/satya/.nvm/versions/node/**)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/v22.17.0/bin:$PATH\")",
+      "Bash(node_modules/.bin/tsc -p apps/intranet/tsconfig.json --noEmit)",
+      "Bash(node node_modules/.bin/tsc -p apps/intranet/tsconfig.json --noEmit)"
+    ]
+  }
+}
